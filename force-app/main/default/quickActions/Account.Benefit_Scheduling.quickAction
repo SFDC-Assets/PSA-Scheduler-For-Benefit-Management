@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This button runs the Outbound New Appointment for Benefit Scheduling Flow. This uses Scheduler, but filters Work Type Groups by associated Benefit Assignments and then finds open Shifts.</description>
+    <flowDefinition>Accelerator_Benefit_Scheduler_Outbound_New_Appointment_Using_Shifts</flowDefinition>
+    <label>Benefit Scheduling</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

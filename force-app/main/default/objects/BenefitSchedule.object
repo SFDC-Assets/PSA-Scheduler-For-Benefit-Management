@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Service_Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Accelerator: Benefit Scheduler - Used to map the Session information to Lightning Scheduler Shifts</description>
+        <label>Service Resource</label>
+        <referenceTo>ServiceResource</referenceTo>
+        <relationshipLabel>Benefit Schedules</relationshipLabel>
+        <relationshipName>Benefit_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Territory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Accelerator: Benefit Scheduler - Used to map the Session information to Lightning Scheduler Shifts</description>
+        <label>Service Territory</label>
+        <referenceTo>ServiceTerritory</referenceTo>
+        <relationshipLabel>Benefit Schedules</relationshipLabel>
+        <relationshipName>Benefit_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

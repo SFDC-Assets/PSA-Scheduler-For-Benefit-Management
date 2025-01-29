@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to create not only the Benefit, but the related records that allow Lightning Scheduler to begin scheduling clients.</description>
+    <flowDefinition>Accelerator_Benefit_Scheduler_New_Benefit_and_Work_Type_Groups</flowDefinition>
+    <label>New Benefit and Work Type</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

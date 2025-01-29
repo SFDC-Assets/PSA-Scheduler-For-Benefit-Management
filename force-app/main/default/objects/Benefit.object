@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Service_Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Service Resource</label>
+        <referenceTo>ServiceResource</referenceTo>
+        <relationshipLabel>Benefits</relationshipLabel>
+        <relationshipName>Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Territory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Service Territory</label>
+        <referenceTo>ServiceTerritory</referenceTo>
+        <relationshipLabel>Benefits</relationshipLabel>
+        <relationshipName>Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Schedules__c</fullName>
+        <label>Total Schedules</label>
+        <summaryForeignKey>BenefitSchedule.BenefitId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Work_Type__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Work Type</label>
+        <referenceTo>WorkType</referenceTo>
+        <relationshipLabel>Benefits</relationshipLabel>
+        <relationshipName>Benefits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Benefit_Scheduler</fullName>
+        <active>true</active>
+        <description>Used with Lightning Scheduler Benefit Accelerator to allow for more advanced scheduling</description>
+        <label>Benefit Scheduler</label>
+        <picklistValues>
+            <picklist>BenefitFrequency</picklist>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>BenefitStatus</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>New_Benefit_Work_Type</fullName>
+        <availability>online</availability>
+        <description>This allows you to create a Benefit and Work Type/Group within one single flow.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Benefit &amp; Work Type</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/flow/Accelerator_Benefit_Scheduler_New_Benefit_and_Work_Type_Groups?recordId={!Program.Id}&amp;retURL={!Program.Id}</url>
+    </webLinks>
+</CustomObject>
