@@ -4,7 +4,7 @@
 
 The Benefit Scheduler Accelerator is to connect Benefit Management with Lightning Scheduler. Many times customers need to track the benefits that are delivered to a client, but need the ease of an efficient scheduling tool. This accelerator connects the process of creating a Benefit Schedules and turns that into a Shift for Lightning Scheduler to use. Secondly, in order to determine what types of services a client is eligibile to schedule for, Lightning Scheduler will reference active Benefits Assigned to the client. Lastly, once a Service Appointment is scheduled, the Benefit Disbersement is logged for benefit management. 
 
-Accelerator Listing: https://login.salesforce.com/packaging/installPackage.apexp?p0=04tam0000010NQf
+[Accelerator Listing](https://gpsaccelerators.developer.salesforce.com/accelerator/a0wDo000000BBEeIAO/scheduler-for-benefit-management)
 
 
 ## Description
