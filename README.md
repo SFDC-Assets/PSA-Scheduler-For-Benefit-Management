@@ -83,34 +83,35 @@ The Benefit Scheduler Accelerator is to connect Benefit Management with Lightnin
 </body>
 </html>
 
-**License Requirements** [Required]
-Nonprofit Cloud Einstein Plus (Sales or Service) Edition - This comes with Nonprfit Cloud and Scheduler in a bundled licence. Otherwise, you will need Nonprofit Cloud and Scheduler Licenses for staff who are considered schedulable resources. 
 
-**Accelerator or Technology-Specific Assumptions** [Optional]
-* Example: You have installed and configured OmniStudio and provided permission to Benefits Management objects.
-* Example: You are using OmniStudio's native runtime.
+## Before You Install
 
-**General Assumptions** [Optional]
+**License Requirements**
+
+Salesforce Scheduler, plus Nonprofit Cloud, Public Sector Solutions, or any other Salesforce industry cloud with access to Program and Benefits Management (internal users); or Nonprofit Cloud Plus edition (which natively includes Scheduler).
+
+**General Assumptions**
+
 It is recommended that you deploy this Accelerator in a sandbox or test environment. It is recommended that you not install any Accelerator directly into production environments.
+
+**Pre-Install Instructions**
+
+- Org Activations
+	- Enable Person Accounts: Setup > Person Accounts and walk through the checklist (create a general Account Record type and confirm implications of setting up person accounts). Person Accounts are use for Clients in Nonprofit Cloud.
+ 	- Enable Program and Benefit Management: Setup, search for "Program and Benefit Management Settings" and enable.
+  	- Setup > search for Scheduling Policy > edit the Default Scheduling Policy (or create a new one for Shift Scheduling). Select "Use service territory member’s shift" and "Use service territory’s operating hours with shifts"
+- User Permissions
+	- Assign the following permission sets to users:
+		- Advanced Program Management
+ 		- Program and Benefit Management Access
+  	- Assign the Permission Set License "Salesforce Scheduler" to your Resources
+  	- Create a new Permission Set (Setup > Permission Set > New). On the Permission Sets overview page, under System section, click System Permissions (bottom of page). Click Edit. Select "Let a user be included in appointments in Salesforce Scheduler". Click Save.
+  	- Assign users the "Industries Assessment" permission set license.
 
 
 ## Installation
 
-You will need to enable Person Accounts: Setup > Person Accounts > and then walk through the steps to enable.
-
-## Before You Install
-
-Org Activations 
-   <li>Enable Person Accounts: Setup > Person Accounts and walk through the checklist (create a general Account Record type and confirm implications of setting up person accounts). Person Accounts are use for Clients in Nonprofit Cloud. 
-   <li>Enable Program and Benefit Management: Setup, search for "Program and Benefit Management Settings" and enable.
-   <li>Setup > search for Scheduling Policy > edit the Default Scheduling Policy (or create a new one for Shift Scheduling). Select "Use service territory member’s shift" and "Use service territory’s operating hours with shifts"
-
-User Permissions - Give Users/Profiles the following Permission Set Assignments:
-    <li>Advanced Program Management
-    <li>Program and Benefit Management Access
-    <li>Assign the Permission Set License "Salesforce Scheduler" to your Resources
-    <li>reate a new Permission Set: Setup > Permission Set > New. On the Permission Sets overview page, under System section, click System Permissions (bottom of page). Click Edit. Select "Let a user be included in appointments in Salesforce Scheduler". Click Save. 
-    <li>Give Users/Profiles the following Permission Set Licenses: Industries Assessment
+* Install the unmanged package: https://test.salesforce.com/packaging/installPackage.apexp?p0=04tam0000010NQf
 
 
 ## Post-Install Setup & Configuration
